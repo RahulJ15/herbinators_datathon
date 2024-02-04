@@ -1,0 +1,119 @@
+body{
+    background: linear-gradient(to right, #4ae376,#98dcab);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width:250px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width:80px;
+    cursor: pointer;
+    
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right:30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: #017d4d
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+
+}
+
+.col-1 h3{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+button{
+    width: 240px;
+    height: 50px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #000;
+    background: linear-gradient(to right,#7deb9c,#7deb9c);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    ;
+}
+
+button img{
+    width: 30px;
+    display: none;
+
+    
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover{
+    width:160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1 ::after{
+    content: " ";
+    width: 10px;
+    height: 50%;
+    background: bisque;
+    position: absolute;
+    left:-22px;
+    top: 8px;
+}
